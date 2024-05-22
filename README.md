@@ -6,6 +6,9 @@ Inneholder definisjoner og testdata for databasen "hobbyhuset" fra (Kristofferse
 Kan lastes ned fra websiden til boken "Databasesystemer" (Kristoffersen, 2020) [SQL-skript for Hobbyhuset](https://www.dbsys.info/Databasesystemer/1_Datasett/sqlskript.html).
 
 ## Oppsett av testmiljøet
+
+Forutsetter at [Docker](https://docs.docker.com/engine/install/) er installert på vertsmaskinen. 
+
 	$ docker run --name trial-mariadb -v /Users/janisg/oslomet/mariadb/datadir:/var/lib/mysql:Z -e MARIADB_ROOT_PASSWORD=Secret001 -d mariadb:latest
 
 	$ docker run --name trial-mariadb -v /Users/…:datadir:/var/lib/mysql:Z -e MARIADB_ROOT_PASSWORD=… -d mariadb:latest

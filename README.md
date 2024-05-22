@@ -1,9 +1,9 @@
 # Databaser (materialer for prøveforelesning)
 
-## SQL-fil
-Inneholder efinisjoner og testdata for databasen "hobbyhuset" fra (Kristoffersen, 2020).
+## SQL-fil for øvinger
+Inneholder definisjoner og testdata for databasen "hobbyhuset" fra (Kristoffersen, 2020).
 
-Kan lastes ned fra 
+Kan lastes ned fra websiden til boken "Databasesystemer" (Kristoffersen, 2020) [SQL-skript for Hobbyhuset](https://www.dbsys.info/Databasesystemer/1_Datasett/sqlskript.html).
 
 ## Oppsett av testmiljøet
 	$ docker run --name trial-mariadb -v /Users/janisg/oslomet/mariadb/datadir:/var/lib/mysql:Z -e MARIADB_ROOT_PASSWORD=Secret001 -d mariadb:latest
@@ -56,5 +56,8 @@ Kan lastes ned fra
 	| Vare                 |
 	+----------------------+
 	8 rows in set (0.01 sec)
+
+## Referanser
+Kristoffersen B. (2020). Databasesystemer. Universitetsforlaget, 5. utgave, ISBN: 978-82-15-03251-1.
 
 

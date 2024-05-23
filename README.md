@@ -1,5 +1,10 @@
 # Databaser (materialer for prøveforelesning)
 
+## Diverse ressurser i denne repository-en
+- [Spørringer fra prøveforelesning](oppgave.sql) 
+- [Spørringer om databaseskjema](databaseskjema.sql)
+- [SELECT eksempler](select-intro.sql)
+
 ## Laboppgaver
 - [Laboppgaver om koblinger](joins.sql) ([Løsningsforslag](lfjoins.sql))
 
@@ -8,7 +13,7 @@ Inneholder definisjoner og testdata for databasen "hobbyhuset" fra (Kristofferse
 
 Kan lastes ned fra websiden til boken "Databasesystemer" (Kristoffersen, 2020) [SQL-skript for Hobbyhuset](https://www.dbsys.info/Databasesystemer/1_Datasett/sqlskript.html).
 
-## Oppsett av testmiljøet
+## Oppsett av øvingsmiljøet
 
 Forutsetter at [Docker](https://docs.docker.com/engine/install/) er installert på vertsmaskinen. 
 

@@ -27,3 +27,14 @@ SELECT Fornavn, Etternavn, sum(PrisPrEnhet*Antall) AS Beløp
 -- Oppgave 5 løsningsforslag
 EXPLAIN (SELECT * from Vare, Kategori);
 EXPLAIN (SELECT * FROM Vare CROSS JOIN Kategori);
+
+-- Oppgave 6 løsningsforslag
+SELECT Fornavn, Etternavn FROM Kunde NATURAL JOIN Ordre;
+
+-- Oppgave 7 løsningsforslag
+-- Kartesisk produkt
+SELECT 
+(SELECT count(*) FROM Kunde) *
+(SELECT count(*) FROM Ordre) *
+(SELECT count(*) FROM Ordrelinje)
+AS 'Antall rader Kunde x Ordre x Ordrelinje';

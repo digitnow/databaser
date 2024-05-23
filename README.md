@@ -1,6 +1,9 @@
 # Databaser (materialer for prøveforelesning)
 
-## SQL-fil for øvinger
+## Laboppgaver
+- [Laboppgaver om koblinger](joins.sql) ([Løsningsforslag](lfjoins.sql))
+
+## SQL-fil for "hobbyhuset"
 Inneholder definisjoner og testdata for databasen "hobbyhuset" fra (Kristoffersen, 2020).
 
 Kan lastes ned fra websiden til boken "Databasesystemer" (Kristoffersen, 2020) [SQL-skript for Hobbyhuset](https://www.dbsys.info/Databasesystemer/1_Datasett/sqlskript.html).

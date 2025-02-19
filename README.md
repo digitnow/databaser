@@ -17,7 +17,11 @@ Kan lastes ned fra websiden til boken "Databasesystemer" (Kristoffersen, 2020) [
 
 Forutsetter at [Docker](https://docs.docker.com/engine/install/) er installert på vertsmaskinen. 
 
-	$ docker run --name trial-mariadb -v /Users/…:datadir:/var/lib/mysql:Z -e MARIADB_ROOT_PASSWORD=… -d mariadb:latest
+	$ docker run --name trial-mariadb -p 3306:3306 -v <en_sti_lokalt>:/var/lib/mysql:Z -e MARIADB_ROOT_PASSWORD=<valgt_passord> -d mariadb:latest
+
+	<en_sti_lokalt> er den mappen hvor man ønsker en kopi av mappen fra kontaineren /var/lib/mysql, som inneholder data og metadata for databasehåndteringssystemet (MariaDB i dette tilfeller)
+
+	<valgt_passord> er et selvvalgt passord, som brukes senere når man skal bruke mysql-klienten på kommandolinje i kontaineren
 
 	$ docker exec -it trial-mariadb bash
 
